@@ -1,0 +1,7 @@
+What is Azure App Service
+
+- HTTP-based service for hosting web applications, REST API, mobile back ends.
+- I can develop with my fav programming language (.NET, .NET Core, Java, Ruby, Node.js, PHP or Python)
+- Run and scale with ease on both Windows and Linux based env
+
+

@@ -1,7 +1,44 @@
-What is Azure App Service
+What is Azure App Service:
 
-- HTTP-based service for hosting web applications, REST API, mobile back ends.
-- I can develop with my fav programming language (.NET, .NET Core, Java, Ruby, Node.js, PHP or Python)
-- Run and scale with ease on both Windows and Linux based env
+	- HTTP-based service for hosting web applications, REST API, mobile back ends.
+	- I can develop with my fav programming language (.NET, .NET Core, Java, Ruby, Node.js, PHP or Python)
+	- Run and scale with ease on both Windows and Linux based env
+
+Features;
+	- Auto scale support: Scale up or Scale out (increase mem/cpu or servers) / Scale down or scale in (decrease mem/cpu or servers).
+	- Continuous integration/ deployment: supports Azure DevOps, GitHub, BitBucket, FTP or local GIT.
+	- Different deployment slots (different than prod environment).
 
 
+Linux fatures:
+App Service cah host web apps natively on Linux.
+
+
+Limits:
+	- Shared pricing tier not supported
+	- You can't mix Windows apps and Linux apps on the same App Service paln
+	- You can't mix Windows and Linux apps on the same resource group if resource group created before 21/01/2021
+
+App Service Plan:
+It's a definition of set of compute resurces for a webapp to run
+On each of them you define:
+	- Region
+	- Number of VM
+	- Size of VM instances (Small, Medium, Large)
+	- Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated)
+	
+Pricing tier:
+
+	- Shared & Free: Uses same resource pool of other customers. Scale is not supported.
+	- Dedicated compute: all resource on same APP Service Plan run on a dedicated VM. More is the tier, more it can scale out
+	- Isolated: dedicated VM on dedicated Azure Virtual Networks. (max scale out capabilities).
+	- Consumption: only on function apps: dynamic scale depending on workload
+	
+When to isolate:
+	- resource intensive
+	- scale indipendently than other apps
+	- app needs resources on a different geographical region
+	
+
+	
+	
